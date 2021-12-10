@@ -30,30 +30,69 @@ p{
 h1 {
     color: white;
     font-size: 50px;
-    text-align: center;
+    vertical-align: middle;
 }
+
 
 .topBar{
     margin: 0;
 	padding: 0;
 	border: 0;
+    
     background-color: black;
     text-align: center;
-    display:block;
+
     width:100%;
     height:100px;
-}
-
-.myDiv {
-    /* border: 5px outset black; */
-    background-color: black ;
-    padding: 35px;
-    text-align: center;
+    line-height: 5em;
 }
 
 .bodyDiv {
     border: 5px outset black;
-    margin: 1% 10% 1% 10%;
+    margin: 3% 10% 1% 10%;
+    display: block;
     background-color: grey ;
     text-align: center;
+}
+
+.buttonDiv{
+    /* display:inline-block;
+    height: 50px;
+    width: 80px;
+    border: 5px solid black; */
+    /* position: relative; */
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    height: 100px;
+
+    line-height: 3em;
+}
+
+.hyperspan {
+
+    display:inline-block;
+    height: 50px;
+    width: 10%;
+    border: 5px solid black;
+    
+    position:relative;
+    left:0;
+    top:0;
+    z-index: 1;
+
+    background: coral;
+    color: cyan;
+    font-weight: bold;
+    vertical-align: middle;
+    
+    font-size: 1.5em;
+    
+    text-decoration: none;
+}
+.hyperspan:hover{
+    background: rgb(255, 140, 98);
+    color: rgb(116, 255, 255);
+    font-size: 1.7em;
 }
