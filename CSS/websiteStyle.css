@@ -23,15 +23,33 @@ body {
     background-color: rgb(34, 33, 43);
 }
 
+/*Navigation Bar [Reorganization Due]*/
 nav.ws-navbar{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    height: 55px;
     background-color: rgb(17, 17, 17);
     padding-left: 2%;
     padding-right: 2%;
+    text-align: center;
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+nav.ws-navbar div.ws-navbuttons{
+    display: block;
+}
+
+nav.ws-navbar div.ws-socials{
+    text-align: right;
+}
+nav.ws-navbar div.ws-socials a{
+    padding: 14px 6px;
+}
+
+nav.ws-navbar div.ws-socials a:hover{
+    background-color: inherit;
 }
 
 nav.ws-navbar a{
@@ -39,30 +57,31 @@ nav.ws-navbar a{
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
+
 nav.ws-navbar a:hover {
     background-color: rgb(184, 184, 184);
 }
+
 nav.ws-navbar a i{
-    text-align: right;
     color: white;
     font-size: 1em;
+    padding: 2% 2%;
 }
-div.ws-navbuttons{
-    text-align: center;
-    display: inline-block;
-}
-div.ws-socials{
-    display: inline-block;
-}
-nav.ws-navbar h1 {
+
+nav.ws-navbar a.ws-titlebutton{
+    padding: 0;
     color: white;
-    text-align: left;
-    font-size: 40px;
+    font-size: 3em;
     vertical-align: middle;
-    display: inline-block;
+    float: left;
 }
+nav.ws-navbar a.ws-titlebutton:hover{
+    background-color: inherit;
+}
+/*End Navigation Bar*/
+
 
 main.ws-main {
     background-color: grey;
