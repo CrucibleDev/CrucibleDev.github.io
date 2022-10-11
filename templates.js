@@ -1,12 +1,14 @@
 window.onload = function(){
+    InjectHTML('head', headTemplateHTML);
+    InjectHTML('header', headerTemplateHTML);
+    InjectHTML('footer', footerTemplateHTML);
+}
 
-    var head = document.getElementById('head');
-    var header = document.getElementById('header');
-    var footer = document.getElementById('footer');
-    
-    head.innerHTML = headTemplateHTML;
-    header.innerHTML = headerTemplateHTML;
-    footer.innerHTML = footerTemplateHTML;
+function InjectHTML(id, injectedHTML) {
+    if (document.getElementById(id)) {
+        var block = document.getElementById(id);
+        block.innerHTML = injectedHTML;
+    }
 }
 
 var headTemplateHTML = `
